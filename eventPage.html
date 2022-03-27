@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eventPage-design.css">
+    <link rel="shortcut icon" type="imege/png" href="images/הורדה.svg"/>
+    <title class="title-page"></title>
+</head>
+<body>
+    <iframe src="shoppingCart.html" id="shop" class="shoppingCart" name="shoppingCart" scrolling="no"></iframe>
+    <div class="page-event">
+        <ul class="menu-header-event">
+           <li class="menu-element back-home-page">
+               <a href="tickchak-main.html" class="click-back">
+                   <div class="click-back-symbol"></div>
+               </a>
+           </li>
+           <li class="menu-element call-production">
+               <a class="call-production-click" >
+                   התקשרו
+               </a>
+               <div class="phone-ctr">
+                  
+                  <div class="phoneNumber"></div>
+                  <div class="copy"></div>
+                  
+               </div>
+           </li>
+           <li class="menu-element share">
+               <a class="share-alert">
+                   שתפו
+               </a>
+           </li>
+           <li class="menu-element about-event-page">
+               <a class="click-about" href="#descr-sec">אודות האירוע</a>
+           </li>
+           <li class="menu-element form-event">
+               <div class="form-now-btn open">
+                 <a>הירשמו עכשיו</a>  
+               </div>
+           </li>
+           <li class="menu-element tickchak-home">
+               <a href="tickchak-main.html" class="click-home"></a>
+           </li>
+        </ul>
+        <div class="top-section-event-page">
+            <div class="top-section-background"> 
+            </div>
+            <div class="top-section-container">
+               <img/>
+            </div>
+            <div class="timer-event">
+                <div class="date-time-detail">
+                    <span class="event-location-page"></span>
+                    <span class="margin-line"></span>
+                    <span class="after-line"> | </span>
+                    <span class="margin-line"></span>
+                    <span class="event-hebrew-date-page"></span>
+                    <span class="margin-line"></span>
+                     <span class="event-date"></span>
+                </div>
+                <div class="timer-brief">
+                    <div class="timer timer-seconds">
+                        <span></span>
+                        שניות
+                    </div>
+                    <div class="timer timer-minutes">
+                        <span></span>
+                        דקות
+                    </div>
+                    <div class="timer timer-hours">
+                        <span></span>
+                        שעות
+                    </div>
+                    <div class="timer timer-days">
+                        <span></span>
+                          ימים
+                    </div>     
+                </div>
+            </div>
+            <div class="section-description" id="descr-sec">
+                <div class="description-b"></div>
+            </div>
+            <div class="homepage-contact-form" id="pageContactUs">
+                <div class="contact">
+                    <h1>צור קשר</h1>
+                    <h4>השאירו פרטיכם ונציגנו יחזור אליכם בהקדם</h4>
+                    <div class="contact-form">
+                        <form class="form-contact-form">
+                            <input type="text" name="first-name" class="d-input" placeholder="שם פרטי">
+                            <input type="text" name="last-name" class="d-input" placeholder="שם משפחה">
+                            <input type="tel" name="tel-number" class="d-input" placeholder="טלפון">
+                            <input type="email" name="email" class="d-input" placeholder="מייל">
+                            <input type="text" name="message" class="d-input" placeholder="הודעה">
+                            <button type="submit" class="btn-sudmit">שלח</button>
+                        </form>
+                    </div>
+                    <div class="contact-ways">
+                        <div class="how-to-contact">
+                             <a class="phone-number" href="tel:*6565">
+                                  *6565
+                            </a>
+                             <a class="email-address" href="mailto:info@tickchak.co.il">
+                                 info@tickchak.co.il
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-map">
+                <iframe src=""
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" name="mapLocation"></iframe>
+                <a class="show-map-btn" target="mapLocation">
+                      הציגו מפה
+                    <div class="event-loc-hall"></div>
+                </a>
+            </div>
+            <div class="footer">
+                <p class="on-by">מופעל ע"י <b>טיקצ'אק </b> -למכור כרטיסים זה קל</p>
+                <p class="on-det">חברת טיקצ'אק אינה מפעילת האירוע. החברה מספקת מערכת עצמאית למארגן האירוע.<br/>טיקצ'אק בע"מ|שטנר 3 ירושלים</p>
+                <p><b>כל הזכויות שמורות לטיקצ'אק בע"מ</b></p>
+                <p class="go-to">
+                    <a href="https://tickchak.co.il/terms"> תנאי השימוש</a>
+                    <a href="https://tickchak.co.il/privacy">מדיניות פרטיות</a></p>
+            </div>
+           
+        </div>
+    </div>
+    <div class="form-button open" ><a target="shoppingCart" style="text-decoration: none; color:black">הירשמו עכשיו</a></div>
+    <script  src="eventApp.js"></script>
+</body>
+</html>

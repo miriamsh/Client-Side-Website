@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הטופס נוצר ע"י טיקצ'אק ומבואבטח ע"י SLL</title>
+    <link rel="stylesheet" href="shoppingCartDesign.css">
+</head>
+<body>
+    <div class="form-main">
+        <div class="fm-title">
+            <div class="fm-title-title">טופס מאובטח SSL מבית <a href="tickchak-main.html" target="_blank">Tickchak.co.il</a></div>
+            <div class="form-main-close">
+                <a    class="close-form"></a>
+            </div>
+        </div>
+        <div class="fm-steps">
+            <div class="form-topstrip">
+                <div class="formm-tsim current div0">הזמנה</div>
+                <div class="formm-tsim disable div2">פרטים אישיים</div>
+                <div class="formm-tsim disable div3">תשלום</div>
+                <div class="formm-tsim disable div4">סיום</div>
+            </div>
+        </div>
+            <div class="form-main-container">
+                <div class="form-main-form">
+                    <div class="form-tickets _scrolled" style="display: initial">
+                    </div>
+                    <div class="form-detailds _scrolled" style="display: none;">
+                        <div class="detailsTitle">
+                             שלא נתבלבל...מלאו את פרטיכם, בעזרת פרטים אלו נזהה אתכם
+                        </div>
+                        <div class="invalid-form">
+                            השלימו את הפרטים החסרים...
+                        </div>
+                        <form class="detailsForm" id="myDetail" autocomplete="off">
+                           <div class="details-item details-item-first_name" data-title="שם פרטי ●" data-hint="שדה חובה">
+                               <div class="success-hide"></div>
+                               <input class="tab" id="frm-name" type="text" name="first_name" required>
+                           </div>
+                           <div class="details-item details-item-last_name" data-title="שם משפחה ●" data-hint="שדה חובה">
+                               <div class="success-hide"></div>
+                               <input class="tab" type="text" name="last_name" required>
+                           </div>
+                           <div class="details-item details-item-phone" data-title="טלפון ●" data-hint="שדה חובה">
+                               <div class="success-hide"></div>
+                               <input class="tab" type="tel" name="phone" required>
+                           </div>
+                           <div class="details-item details-item-email" data-title="דואר אלקטרוני ●" data-hint="שדה חובה">
+                               <div class="success-hide"></div>
+                               <input class="tab" type="email" name="email" required>
+                           </div>
+                        </form>
+                        
+                    </div>
+                      <div class="form-payment _scrolled"style="display: none;">
+                          <div class="payment-title">מלאו את פרטי כרטיס האשראי שלכם <br/>החיוב באשראי יופיע על שם: טיקצ'אק כרטיסים</div>
+                          <div class="sum-of-payment">
+                              <div class="title-sum"></div>
+                          </div>
+                          <div class="payment-form">
+                             <form id="paymentFormHere" autocomplete="off" >
+                                <div class="formRow cardRow"  data-title="מספר כרטיס אשראי" id="div-txtCardNumber">
+                                    <span class="fieldInput"><input type="tel"  id="txtCardNumber" maxlength="16" minlength="10" required>
+                                    <div class="success-icon-hide" id="success-icon-txtCardNumber"></div></span>
+                                </div>
+                                <div class="formRow expmonthInput" data-title="חודש" id="div-expmonthInput">
+                                    <input type="number" id="expmonthInput" maxlength="2" min="01" max="12" required>
+                                    <div class="success-icon-hide" id="success-icon-expmonthInput"></div>
+                                </div>
+                                <li class="formm-icon-slash"><span>/</span></li>
+                                <div class="formRow expyearInput" data-title="שנה" id="div-expyearInput">
+                                    <input type="tel" id="expyearInput" maxlength="2" minlength="2" required>
+                                    <div class="success-icon-hide" id="success-icon-expyearInput"></div>
+                                </div>
+                                <div class="formRow cvvRow" data-title="קוד אימות" id="div-txtCvv">
+                                     </span>
+                                    <span class="fieldInput"><input type="tel" maxlength="3" minlength="3" id="txtCvv" required>
+                                        <div class="success-icon-hide" id="success-icon-txtCvv"></div>
+                                        <div class="formm-input-cvv-icon"></div>
+                                    </span>
+                                </div>
+                                <div class="formRow cardRow" data-title="מספר זהות" id="div-txtCardOwnerID">
+                                     <span class="fieldInput"><input type="tel" maxlength="10" minlength="8" id="txtCardOwnerID" required>
+                                        <div class="success-icon-hide" id="success-icon-txtCardOwnerID"></div>
+                                    </span>
+                                </div>
+                               
+                                
+                             </form>
+                          </div>
+                      </div>
+                      <div class="form-end _scrolled" style="display: none;">
+                          <h1>ההזמנה הושלמה</h1>
+                           <a class="homePage-back" href="tickchak-main.html" target="_parent" >למעבר לאירועים נוספים</a>
+                      </div> 
+                    
+                   
+
+                </div>
+                <div class="summery-reser">
+                   <div class="order-sum">
+                    <div class="form-main-side-content _scroll">
+                        <div class="forms-center">
+                            <h1 class="forms-top">
+                                <div class="forms-top-text">סיכום הזמנה</div>
+                                <span class="frm-event-title"></span>
+                            </h1>
+                            <div class="forms-ticketlist">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                   </div>
+                   <div class="fm-summary">
+                       <div class="fm-summary-details">
+                           <div class="fm-summary-details-sum"></div>
+                           <div class="fm-summary-details-text">כרטיסים</div>
+                        </div>
+                    </div>
+                    <div class="fm-summary-total-sum">
+                        <div class="fm-summary-total-sum-text">לתשלום</div>
+                        <span class="spnPrice"></span>
+                    </div>
+                   <div class="comeon">
+                     <div class="comeon-text">
+                       <h1>מהר לפני שיגמר!</h1>
+                       <h2>קנו כרטיסים לאירוע <span></span></h2>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="fmb-b-wait">
+                <div class="close-ftm-b-wait"></div>
+               <div class="text-frm-b-wait">רגע! עוד לא בחרתם כרטיס</div> 
+            </div>
+        <div class="form-main-bottom">
+            <div class="frm-btns">
+              
+                <div class="fmb-b-next-details">לסיום ההרשמה</div>
+                <div class="fmb-b-next-btn" style="visibility: visible;" ><button  class="next" style="cursor: pointer;">המשך</button> </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="shoppingCart-app.js"></script>
+</body>
+</html>

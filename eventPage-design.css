@@ -1,0 +1,698 @@
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 16px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:#01acf1;       
+  }
+body::-webkit-scrollbar {
+    width: 15px;
+    background-color: #F5F5F5;
+}
+ul, li {
+    list-style: none;
+    display: block;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    line-height: 80px;
+    font-weight: normal;
+}
+h4{
+    font-weight: lighter;
+}
+.page-event{
+    overflow-x: hidden;
+position: relative;
+}
+.menu-header-event{
+    position: fixed;
+    background: #f3f3f2;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    height: 68px;
+}
+.menu-header-event li{
+    display: inline-block;
+    height: 68px;
+    position: relative;
+     vertical-align: top;
+    font-size: 18px;
+    padding: 0 1%;
+    transition: border-bottom 4000ms;
+}
+.menu-header-event li::after{
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #4a4a4a91;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-out;
+    transform: scaleX(0);
+    right: auto;
+    left:0;
+}
+.menu-header-event li:hover::after {
+    transform: scaleX(1);
+}
+
+/*.menu-header-event li::before{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    vertical-align: middle;
+}
+.menu-header-event li::after{
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #4a4a4a91;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-out;
+    transform: scaleX(0);
+}*/
+.back-home-page{
+    float:right;
+    left: auto;
+    right: 20px;
+    margin-right: 0;
+    margin-left: 20px;
+    padding: 0;
+    border: none;
+    height: 100%;
+    width: 60px;
+    position: relative;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.25,.46,.45,.94);
+    max-width: 130px;
+}
+.click-back-symbol{
+    content: '';
+    background-image: url(images/חץ-תפריט.svg);
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+.call-production{
+    cursor: pointer;
+    height: 68px;
+    line-height: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 80px;
+    background-image: url(images/טלפון-דף.svg);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center 18px;
+    overflow: visible;
+    float: right;
+ }
+ .call-production-click{
+    height: 100%;
+    min-width: 50px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: baseline;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    text-overflow: ellipsis;
+     font-size: 16px;
+}
+.phone-ctr{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 160px;
+    height:  0;
+    transition: height 0.5s;
+    background: #f3f3f3;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.phoneNumber{
+    width: 75%;
+    float: left;
+    height: 0;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    direction: ltr;
+    color: black;
+}
+.copy{
+    content: ' ';
+    width: 25%;
+    height: 0;
+    text-align: center;
+    position: relative;
+    float: right;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-image: url(images/העתק-דף.svg);
+     background-repeat: no-repeat;
+    background-size: 56%;
+    background-position: center center;
+}
+ 
+.share{
+    float:  right;
+    height: 68px;
+    line-height: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    width: auto;
+    background-image: url(images/שתף-דף.svg);
+     background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center 18px;
+    cursor: pointer;
+}
+.share-alert{
+    font-size: 16px;
+}
+.about-event-page{
+    cursor: pointer;
+    padding: 0 1%;
+    float: center;
+    right: -50px;
+}
+.about-event-page::before{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    vertical-align: middle;
+    
+}
+.about-event-page::after{
+    border-radius: 50px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #90787891;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-out;
+    transform: scaleX(0);
+ }
+.click-about{
+    letter-spacing: 2px;
+    vertical-align: middle;
+    width: 130px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-decoration: none;
+    color:inherit;
+    font-size: 15px;
+ }
+ @media (min-width: 0px) and (max-width: 834px){
+li.about-event-page{ 
+     display: none; 
+ }
+ .form-event{
+     display: none;
+ }
+ .form-now-btn{
+     display: none;
+ }
+}
+.click-about::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.form-event{
+   overflow:visible;
+   position: relative;
+   right: -50px;
+ }
+.form-now-btn{
+     background: #e7d61d;
+    border-radius: 40px;
+    padding: 8px 18px;
+    cursor:pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 190px;
+    margin-top: 11px;
+    max-height: 47px;
+    font-size: 15px;
+}
+.form-now-btn::before{
+    content: url(images/סל-דף.svg);
+     display: inline-block;
+    position: relative;
+    right: -10px;
+    margin: 0 10px 0 0;
+    width: 22px;
+    height: auto;
+    vertical-align:middle;
+}
+.tickchak-home{
+    border-right: none;
+    float: left;
+    opacity: 1;
+    background-image: url(images/טיק-צאק-דף.svg);
+     background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: opacity ease 0.5s;
+    transition-delay: 0.1s;
+    overflow: visible;
+    position: relative;
+    padding: 0 3%;
+    width:45px;
+}
+ 
+.tickchak-home::before{
+    right: auto;
+    left: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.top-section-event-page{
+    background-color: #2C549E;
+    height:  auto;
+    width: 100%;
+    min-height: 470px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+.top-section-background{
+    content: '';
+    background: inherit;
+    position: fixed;
+    top: 0;
+    right: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(50px);
+}
+.top-section-container{
+  /*  position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:  768px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;*/
+    position: relative;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+     
+}
+.top-section-container>img{
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+     background-size:auto;
+    background-position: center;
+    background-image: url(images/סיור-דף-חתוך.jpeg);
+ }
+/*.top-cont-in{
+    width:  70%;
+    height: 768px;
+    position: absolute;
+     margin-right: 15%;
+     margin-left:  15%;
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center center;
+      vertical-align: middle;
+      position: relative;
+      padding-top: 65px;
+}
+@media  (max-width:1120px) and (min-width:0px) {
+    .top-cont-in{
+        width:  90%;
+        height: 768px;
+        position: absolute;
+         margin-right: 5%;
+         margin-left:  5%;
+    }
+}
+/*.top-cont-in img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+}*/
+ /*.top-cont-in-img{
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    background-position: center center;
+    height: 728px;
+    width: 722px;
+   
+     vertical-align: middle;
+     position: relative;
+    
+}
+.top-cont-in-img>img{
+    width: 80%;
+    height: 100%;
+}*/ 
+.timer-event{
+    top:40px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+.date-time-detail{
+    font-size: 24px;
+}
+.date-time-detail span{
+    float: right;
+}
+.timer-brief{
+    margin-left: 0;
+     position: relative;
+    display: flex;
+}
+.timer{
+    margin-right: 0;
+    margin-left: 6px;
+    float: right;
+    border: solid 2px;
+    width: 69px;
+    height: 69px;
+    padding: 6px 0 0 0;
+    font-size: 15px;
+}
+.timer>span{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.margin-line{
+    content: '';
+    margin: 5px;
+}
+.section-description{
+    text-align: center;
+    direction: rtl;
+    color: #707070;
+    padding: 100px 15%;
+    background-size: cover;
+    background-position: center center;
+    line-height: 1;
+    position: relative;
+    top:40px;
+
+}
+.description-b{
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 300;
+    width: 100%;   
+}
+.section-map iframe{
+    border:1px solid grey;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/מפה-דף.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:0;
+}
+.section-map{
+    height: 450px;
+     
+}
+.show-map-btn{
+    position: absolute;
+      z-index: 2; 
+    left: 50%;
+    min-width: 200px;
+    bottom: 370px;
+    height: 40px;
+    background: #01acf1;
+    border: 1px solid #01acf1;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    line-height: 38px;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+
+}
+.show-map-btn:hover{
+    background-color: #ffff;
+    color: #01acf1;
+}
+.event-loc-hall{
+    padding-left: 19px;
+    line-height: 40px;
+    font-weight: 200;
+    display: inline-block;
+}
+.footer{
+    background-color: #d0dadc;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.8);
+}
+.on-by{
+    padding:20px;
+    text-align: center;
+    font-size: 18px;
+    height: 60px;
+    border-bottom: 1px #c0c5c6 solid;
+}
+.on-det{
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 4px;
+}
+.go-to{
+    text-align: left;
+    color: #999;
+   
+    float: right;
+}
+.go-to>a{
+    color:#999;
+    float: right; 
+    margin-right: 10px;
+}
+.form-button{
+    font-size: 26px;
+    position: fixed;
+    left: 0;
+    right: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    top: 80%;
+    display: inline-block;
+    overflow: hidden;
+    width: 320px;
+    /* height: 70px; */
+    background: #ffec1b;
+    border-radius: 50px;
+    color: #121212;
+    cursor: pointer;
+    z-index: 90;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 21px 0;
+    text-align: center;
+ /*   transition: width 400ms, top 400ms, transform 300ms;*/
+    -webkit-box-shadow: 0 0 21px 2px rgb(0 0 0 / 40%);
+    -moz-box-shadow: 0 0 21px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 21px 2px rgb(0 0 0 / 40%);
+} 
+
+.shoppingCart{
+    float: left;
+    opacity: 0;
+    position: fixed;
+    height: 100%;
+    min-height: 400px;
+    background: #f4f4f4;
+    margin-right: 100%;
+    overflow: hidden;
+    color: #474747;
+    cursor: pointer;
+    z-index: 1100;
+    -webkit-overflow-scrolling: touch;
+    border: none;
+    width: 50%;
+    min-width: 920px;
+    max-width: calc(100% - 300px);
+    top:0;
+     
+}
+@media  (min-width:0px) and (max-width:1200px) {
+    .shoppingCart{
+        min-width: 100%;
+    }
+}
+.homepage-contact-form{
+    height: 530px;
+    position: relative;
+    background: #fff;
+    padding-top: 50px;
+    z-index: 6;
+ }
+ .contact{
+     position: relative;
+     margin: 0 230px;
+     height: 100%;
+ }
+ .contact>h1{
+     font-weight: lighter;
+     margin-bottom: 10px;
+ }
+ .contact>h4{
+     font-weight: 100;
+ }
+
+ .contact-form{
+     position: relative;
+     margin-right: 20px;
+     width: 40%;
+ }
+ .d-input{
+     position: relative;
+     border:none;
+     margin:20px;
+     width:100%;
+     display: block;
+     border: none;
+    border-bottom: solid 1px #ccc;
+    font-size: 18px;
+    padding: 5px 8px;
+    font-family: serif;
+ }
+ .d-input::placeholder{
+     font-size: 18px;
+     font-weight: 200; 
+ }
+ .btn-sudmit{
+    display: block;
+    margin: 12px 10% 26px 0;
+    float: right;
+    width: 100px;
+    text-align: center;
+    border: solid 1px #818181;
+    color: #818181;
+    padding: 6px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+}
+.contact-ways{
+    position: relative;
+    width: 30%;
+    float: left;
+    top:-190px;
+    margin-left: 10%;
+    text-align: left;
+}
+@media  (max-width:1073px) and (min-width:0px) {
+    .contact-ways{
+        display: none;
+    }
+}
+.how-to-contact>a{
+    margin: 15px;
+    text-align: left;
+    direction: ltr;
+    padding-left: 45px;
+}
+.phone-number{
+     text-decoration: none;
+     color:#474747;
+     display: block;
+    background-size: 40px 40px;
+    background-image: url(images/tel-icon.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.email-address{
+    text-decoration: none;
+    color:#474747;
+    display: block;
+   background-size: 40px 40px;
+   background-image: url(images/anval-icon.svg);
+   background-repeat: no-repeat;
+   background-position: left;
+}

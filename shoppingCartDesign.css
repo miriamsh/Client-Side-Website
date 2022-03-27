@@ -1,0 +1,885 @@
+
+*{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    direction: rtl;
+    background: #f4f4f4;
+ }
+.form-main{
+   
+    background: #f4f4f4;
+}
+.fm-title{
+    height: 40px;
+    position: relative;
+    border-bottom: 1px solid #d8d8d8;
+
+}
+.fm-title-title{
+    padding: 12px 43px 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    float: right;
+}
+.fm-title-title a{
+    color: #01acf1;
+}
+.close-form{
+    right: 5px;
+    left: auto;
+    top: 7px;
+    left: 5px;
+    background-image: url(images/כפתור-טופס.svg);
+     position: absolute;
+    top: calc(50% - 10px);
+    left: 19px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 50;
+    cursor: pointer;
+}
+.fm-steps{
+    border-bottom: 1px solid #d8d8d8;
+    height: 35px;
+    padding: 3px 0;
+}
+.form-topstrip{
+    float: right;
+    text-align: center;
+    width: 100%;
+     vertical-align: middle;
+}
+.formm-tsim{
+    padding: 5px 30px 5px 15px;
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 31px;
+     cursor: pointer;
+    user-select: none;
+    border: transparent 1px solid;
+    -webkit-user-select: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.formm-tsim:hover{
+    border: black solid 1px;
+}
+.disable::after{
+    content: url(images/חץ-טופס.svg);
+     display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    left: -26px;
+    pointer-events: none;
+    transform: rotate(180deg);
+    left: auto;
+    right: -26px;
+    transform: rotate(0);
+}
+.current{
+    color: #fff;
+    background: #01acf1;
+}
+.prev{
+    color: black;
+    
+}
+.form-main-container{
+    height:  75vh;
+   
+    position: relative;
+
+}
+                                                                      .form-main-form{
+    float: right;
+    padding-right: 30px;
+    margin-right: 15px;
+    padding-left: 0;
+    margin-left: 0;
+    height: 100%;
+    width:  50%;
+    overflow: auto;
+    direction: rtl;
+    margin-left: 15px;
+    padding-top: 50px;
+    transition: width 400ms;
+    position: relative;
+}
+.form-main-form>div{
+    transition: all 500ms;
+    height: 100%;
+}
+.ticket{
+    position: relative;
+    transition: all 300ms;
+    margin-top: 10px;
+}
+.ticket-container:hover{
+    box-shadow: 0 0 15px 0px rgb(0 0 0 / 40%);
+ }
+.ticket-container{
+    width: 85%;
+    height: 120px;
+    display: inline-block;
+    border: 1px solid #afafaf;
+    box-sizing: content-box;
+    background: #fff;
+    transition: all 500ms ease-in-out;
+}
+.ticket-side{
+    float: right;
+    width: 50px;
+    background-size: 28px 28px;
+    background-position: 11px 88px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/סמל-כרטיס-טופס.svg);
+    background-color: #10C2D1;
+}
+.ticket-details{
+    float: right;
+    padding: 3% 3% 2% 3%;
+    width: calc(100% - 110px);
+    height: 100%;
+}
+.ticket-dtl-title, .ticket-dtl-title>span{
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 12px;
+    overflow: hidden;
+    direction: rtl;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+  .ticket-dtl-price{
+    display: inline-block;
+    font-size: 40px;
+    direction: ltr;
+    padding-top: 5px;
+    overflow: hidden;
+}
+.ticket-dtl-price>span{
+    font-size: 34px;
+    font-weight: 200;
+}
+.ticket-amount{
+    float: left;
+    border-right: 1px solid #afafaf;
+    border-left: none;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    width: 60px;
+}
+.plus, .minus{
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 500ms ;
+}
+.plus:hover, .minus:hover{
+    background-color: #01acf1;
+}
+.amount{
+    height: 40px;
+
+}
+.ticketAmount{
+    float: right;
+    padding-left: 0;
+    padding-right: 30px;
+}
+.ticketPrice{
+    float: left;
+    font-weight: 600;
+}
+.summery-reser{
+    height:500px;
+    float: left;
+     width: 45%;
+    position: relative;
+    display: block;
+    background: #fff;
+    transition: all 400ms;
+    padding: 50px 0;
+}
+.comeon{
+    padding-top: 50%;
+    right: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    text-align: center;
+}
+.comeon-text{
+    margin:   auto;
+}
+.comeon-text h1{
+    font-size: 28px;
+    position: relative;
+}
+.comeon-text h2{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 0 5px;
+    position: relative;
+}
+.form-main-bottom{
+    width: 50%;
+    background: #01acf1;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    min-width: 920px;
+    max-width: calc(100% - 300px);
+    transition: all 500ms ease-in-out;
+    height: 50px;
+}
+.frm-btns{
+    right: auto;
+    left: 20px;
+    padding: 5px 20px;
+    position: absolute;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+
+}
+.fmb-b-cupon > input{
+    margin: 0;
+    background: white;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 37px;
+    padding: 6px 30px;
+    font-size: 16px;
+    border: 0;
+    pointer-events: visible;
+    display: inline-block;
+}
+.fmb-b-next-details{
+    display: none;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: width 630ms,margin-left 400ms;
+    margin-top: 17px;
+    margin-left: 10px;
+    border-radius: 37px;
+    padding: 6px 30px;
+    font-size: 16px;
+    margin-right: 5px;
+    pointer-events: visible;
+    color: #d8e6e7;
+    border: 1px solid;
+}
+.fmb-b-next-btn{
+    margin: 0;
+    cursor: pointer;
+    background: #ddd;
+    position: relative;
+    font-weight: 600;
+    border-radius: 37px;
+    padding: 6px 30px;
+    font-size: 16px;
+    border: 0;
+    pointer-events: visible;
+    float: right;
+}
+.form-main-side-content{
+    overflow: auto;
+    height: 90%;
+    position: relative;
+}
+.forms-center{
+    text-align: center;
+    padding: 0 10px;
+}
+.forms-top{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 49px;
+    position: relative;
+    padding-bottom: 32px;
+    letter-spacing: 1px;
+}
+.frm-event-title{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1em;
+    padding-top: 0;
+    margin: 0;
+    letter-spacing: 2px;
+}
+.forms-top::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    width: 283px;
+    height: 3px;
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+.forms-ticketlist{
+    height: auto;
+    min-height: 215px;
+
+}
+.forms-r-ticket{
+    border-top: 1px solid #b4b4b4;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    position: relative;
+}
+.forms-r-ticket:last-child {
+    border-bottom: 0;
+}
+.forms-ticket-title{
+    font-size: 18px;
+    height: 54px;
+}
+.forms-ticket-title .title-symbol{
+    left: auto;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-size: 15px 15px;
+    background-position: center center;
+    color: #fff;
+    background-color: #10C2D1;
+     background-repeat: no-repeat;
+    background-image: url(images/סמל-כרטיס-טופס.svg);
+}
+.form-tickets{
+    height: auto;
+    position: relative;
+}
+.forms-ticket-title .title{
+    text-align: right;
+    padding-left: 0;
+    padding-right: 30px;
+    font-weight: 600;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.forms-ticket-title .amount{
+    font-weight: 600;
+}
+.forms-ticket-title .amount{
+    float: right;
+    padding-left: 0;
+    padding-right: 30px;
+}
+.fm-summary{
+    height: 30px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.fm-summary::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background: #c8c9c9;
+    top: 25px;
+}
+.fm-summary-details{
+    margin-left: 10px;
+    margin-right: 0;
+    float: right;
+}
+.fm-summary-details-sum {
+    font-size: 28px;
+    line-height: 22px;
+}
+.fm-summary-details-text{
+    display: inline-block;
+}
+.fm-summary-details-sum, .fm-summary-details-text {
+    text-align: center;
+    font-weight: 100;
+}
+.fm-summary-total-sum{
+    font-size: 24px;
+    height: 41px;
+    line-height: 42px;
+    color: #000000;
+    width: 80%;
+    text-align: center;
+    margin: 14px auto 0;
+}
+.fm-summary-total-sum-text{
+    display: inline-block;
+    width: 47%;
+    font-weight: 700;
+    position: relative;
+    font-size: 18px;
+    top: -4px;
+    text-align: right;
+}
+.fm-summary-total-sum span {
+    font-weight: 600;
+    font-size: 30px;
+}
+.summery-reser{
+    overflow-y: auto;
+   
+}
+.summery-reser::-webkit-scrollbar{
+    display: rtl;
+}
+.currentBtn::before{
+    content: '';
+    background-image: url(images/חץ-טופס=שחור.svg);
+    background-repeat: no-repeat;
+    left: auto;
+    right: 8px;
+    top:8px;
+     width: 16px;
+    height: 16px;
+    position: absolute;
+    background-size: contain;
+}
+.colorBtn{
+        background: #e5d43c;
+        transition: transform 400ms;        
+}
+.colorBtn:hover{
+    transform: scale(110%);
+}
+.fmb-b-wait{
+    right: auto;
+    left: 15px;
+    bottom: -180px;
+    position: absolute;
+    width: 400px;
+    height: 110px;
+    background: #696969;
+    opacity: 0.9;
+    transition: bottom 300ms ease-in-out;
+    z-index: 10000;
+}
+.close-ftm-b-wait::after{
+left: auto;
+right: 30px;
+content: '';
+background-image: url(images/סגור-טופס.svg);
+ background-size: contain;
+background-position: left;
+top: 20px;
+width: 10px;
+height: 10px;
+cursor: pointer;
+left: 30px;
+position: absolute;
+}
+.form-detailds{
+    height: 100%;
+}
+.text-frm-b-wait{
+    width: 90%;
+    height: 58%;
+    margin: 33px auto 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.detailsTitle{
+    font-size: 20px;
+    width: 83%;
+    height: 120px;
+    text-align: center;
+    padding-left: 0;
+}
+.invalid-form{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    position: relative;
+    top:-50px;
+    opacity: 0;
+}
+.detailsForm{
+    margin: 0px 0px 38px 0px;
+}
+.details-item{
+    position: relative;
+    width: 90%;
+    height: 60px;
+    margin-top: 30px;
+    border-bottom: 1px solid #000;
+    display: block;
+}
+.details-item:hover{
+    border-bottom: 1px solid #01acf1; 
+}
+.details-item::before{
+    right: auto;
+    left: 0;
+    text-align: right;
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 13px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 500;
+    transition: all 400ms;
+}
+.success-hide{
+    transform: scale(1);
+    right: auto;
+    left: 1px;
+    background-color: #86c81c;
+    background-image: url(images/חץ-דף.svg);
+    background-position: center;
+    background-size: 15px auto;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+     top: 10px;   
+    transition: all 300ms cubic-bezier(0.42, 0, 0.24, 1.77);
+    opacity: 0;
+}
+.tab{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    padding-top: 20px;
+    z-index: 10;
+    position: relative;
+    resize: none;
+}
+.tab:valid .success-hide{
+  opacity: 1;
+}
+/*.details-item .tab:invalid{
+    border-bottom: 1px solid rgb(202, 0, 0);
+}*/
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+input:focus{
+    outline: none;
+}
+.checked{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #01acf1;
+    position: absolute;
+    line-height: 9px;
+    padding: 3px;
+    text-indent: 0;
+     margin: 2px;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+}
+.qwe{
+ margin-right: 10px; 
+}
+.checked:invalid{
+    border: 1px solid #d00;
+}
+.qwe-div{
+    position: relative;
+    margin: 5px;
+}
+.form-payment{
+    height: 100%;
+    padding-left: 0;
+    position: relative;
+    width: 100%;
+    max-width: 802px;
+    margin: 0 auto;
+}
+.payment-title{
+    font-size: 16px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+.sum-of-payment{
+    pointer-events: none;
+    text-align: right;
+    direction: rtl;
+    height: fit-content;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #cbc0c0;
+    background: #fdfdfd;
+    line-height: 18px;
+    float: unset;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+}
+.title-sum{
+    width: 90%;
+}
+.formRow{
+    display: inline-block;
+    background: #f4f4f4;
+    border-radius: unset;
+    border: none;
+    border-bottom: solid 1px #cbc0c0;
+    padding: 8px 0;
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    position: relative;
+    cursor: text;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: right;
+    transition: width 1s;
+}
+.formRow:before{
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: top 0.4s;
+    pointer-events: none;
+    font-weight: 500;
+}
+.focuss::before{
+    top:-20px;
+    color: #10C2D1;
+}
+.fieldName{
+    vertical-align: top;
+    padding: 7px 0 0;
+    display: none;
+    width: 180px;
+}
+.fieldInput{
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    width: 100%;
+}
+#txtCardNumber {
+    direction: ltr;
+    text-align: right;
+}
+
+
+#txtCardNumber, #txtCvv, #txtCardOwnerID {
+    width: 100%;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.success-icon-hide {
+    opacity: 0;
+    background-color: #86c81c;
+      background-position: center;
+    background-size: 9px auto;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+    top: -20px;
+    left: auto;
+    transition: all 300ms cubic-bezier(.42,0,.24,1.77);
+}
+#expmonthInput, #expyearInput {
+    width: 100%;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+.formm-icon-slash {
+    display: inline-block;
+    position: relative;
+    width: 5%;
+}
+.expyearInput{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+ .formRow.expmonthInput, .formRow.expyearInput{
+    font-size: 18px;
+    position: relative;
+    cursor: text;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: right;
+    transition: width 1s;
+    border-radius: unset;
+    border: none;
+    border-bottom: solid 1px #cbc0c0;
+    padding: 8px 0;
+    margin: 12px 0;
+    width: 15%;
+     background: #f4f4f4;
+}
+.formRow.cvvRow {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+}
+ .formRow .fieldInput {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    width: 100%;
+}
+#txtCvv{
+    color: #444;
+}
+.formm-input-cvv-icon{
+    background-image: url(images/cvv.svg);
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -5px;
+    transition: all 0.5s ease-in-out;
+    left: 1px;
+    cursor: pointer;
+}
+.submitDiv{
+    min-height: 35px;
+    display: block;
+}
+.buttonDiv{
+    margin: 20px 0;
+    width: 100%;
+}
+#tic-submit.disabled{
+    background: #ddd;
+    pointer-events: none;
+    cursor: default;
+    border-color: #ddd;
+    color: #000;
+}
+
+
+#tic-submit {
+    float: left;
+    font-weight: bold;
+    margin: 31px 22px 14px;
+    padding: 9px 0;
+    width: 100%;
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 37px;
+    cursor: pointer;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: width 630ms;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 32px 0 40px;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    float: none;
+    margin-top: 20px;
+    border-width: 0;
+    border-style: none;
+}
+.canSumbit{
+    color: #000;
+    width: 174px;
+    background-color: #286090;
+    border-color: #204d74;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form-end{
+    height: 500px;
+    width: 100%;
+}
+.form-end > h1{
+    width: 50%;
+    position: relative;
+    top:50px;
+    right: 27%;
+    font-size: 55px;
+    font-weight: lighter;
+    text-align: center;
+    color: #444;
+    
+}
+.homePage-back{
+    position: relative;
+    top:80px;
+    right: 120px;
+    text-decoration: none;
+    padding: 9px 20px;
+    background-color: #e5d43c;
+    border:#e5d43c 1px solid;
+    border-radius: 50px;
+
+}

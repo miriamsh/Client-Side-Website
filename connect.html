@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות לטיקצ'אק</title>
+    <link rel="stylesheet" href="connectDesign.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="contact-details">
+            <div class="inner-part">
+                <div class="logo">
+                </div>
+                <hr/>
+                <div class="contact-form">
+                    <form id="contact" autocomplete="off">
+                        <div class="input-div name">
+                            <input type="text" class="input-name" name="user_name" placeholder="שם משתמש" required>
+                        </div>
+                        <div class="input-div pass">
+                             <input type="password" class="input-pass" name="pass" placeholder="סיסמה" maxlength="40" required>
+                            <div class="view-pass"></div>                    
+                        </div>
+                        <div class="connect-btn">
+                            <button type="submit"   class="sumbit-btn">התחברו</button>
+                        </div>
+                    </form>
+                </div>  
+            </div>
+        </div>
+        <div class="picture-left">
+            <div class="main-title">
+            זהירות.<br>מטוסים מנמיכי טוס
+            </div>
+            <div class="second-title">
+            גם החלומות הגדולים ביותר צריכים לרדת לקרקע, אל הלקוח שלך. טיקצ'אק מציעה לכם דף נחיתה מרהיב, כזה שאתם יכולים לעצב בעצמכם. עם טופס רכישה פשוט קל ונוח לרכישת כרטיסים ולביצוע הרשמה.
+            </div>
+            <div class="inner-picture"></div>
+        </div>
+    </div>
+    <script src="connect-app.js"></script>
+    <script>
+        const form = document.querySelector('#contact');
+        form.onsubmit = (e) => {
+            e.preventDefault();
+            // שליפה של נתוני טופס
+            const formData = new FormData(event.target);
+            // המרה של האובייקט שלח הטופס לאובייקט רגיל של js
+            const data = Object.fromEntries([...formData.entries()]);
+            // בשמן שמירת הנתונים חובה להמיר אותם למחרוזת, כי האחסון יודע להכיל מחרוזות בלבד
+            sessionStorage.setItem('currentUSer', JSON.stringify(data));
+            debugger;
+            location.href = 'http://127.0.0.1:5500/%D7%A4%D7%A8%D7%95%D7%99%D7%99%D7%A7%D7%98%D7%92%D7%9E%D7%A8/tickchak-main.html';
+        }
+    </script>
+</body>
+</html>
